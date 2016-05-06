@@ -6,18 +6,13 @@
   "scripts": {
     "prepublish": "npm build",
     "postpublish": "npm run publish:docs",
-
     "prepublish:docs": "npm run build:docs",
     "publish:docs": "surge --domain react-interactjs.surge.sh demo",
     "postpublish:docs": "npm run cleanup:docs",
-    
     "build": "webpack",
     "build:docs": "webpack --config webpack.demo.config.js",
-    
     "cleanup:docs": "rm -rf demo/js",
-    
     "dev": "webpack-dev-server --config webpack.demo.config.js --content-base demo --hot --inline",
-    
     "test": "mocha"
   },
   "keywords": [
@@ -38,9 +33,11 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-1": "^6.5.0",
     "babel-register": "^6.8.0",
+    "chai": "^3.5.0",
     "enzyme": "^2.2.0",
     "mocha": "^2.4.5",
     "react": "^15.0.2",
+    "react-addons-test-utils": "^15.0.2",
     "react-dom": "^15.0.2",
     "surge": "^0.18.0",
     "webpack": "^1.13.0",
