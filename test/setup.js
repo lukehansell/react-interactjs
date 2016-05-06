@@ -1,1 +1,3 @@
-global.expect = require('chai').expect
+global.expect = require('chai')
+	.use(require('sinon-chai'))
+	.expect
