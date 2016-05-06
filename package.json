@@ -12,7 +12,7 @@
     "build": "webpack",
     "build:docs": "webpack --config webpack.demo.config.js",
     "cleanup:docs": "rm -rf demo/js",
-    "dev": "webpack-dev-server --config webpack.demo.config.js --content-base demo --hot --inline",
+    "start": "webpack-dev-server --config webpack.demo.config.js --content-base demo --hot --inline",
     "test": "mocha"
   },
   "keywords": [
@@ -42,5 +42,8 @@
     "surge": "^0.18.0",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "interact.js": "^1.2.6"
   }
 }
