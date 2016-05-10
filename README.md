@@ -1,5 +1,7 @@
 # react-interactablejs
 
+[View the demo](http://react-interactjs.surge.sh/)
+
 ## Props
 - _draggable_ (Bool) - is the child object supposed to be draggable?
 - _draggableOptions_ (Object) - options to pass to the draggable method

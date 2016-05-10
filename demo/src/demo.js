@@ -21,9 +21,12 @@ const draggableOptions = {
 }
 
 const example = (
-	<Interactive draggable draggableOptions={draggableOptions}>
-		<img src="https://pbs.twimg.com/profile_images/526421493731717120/INda0NaM.png" height={100} width={100}/>
-	</Interactive>
+  <div>
+    <h2>Draggable</h2>
+      <Interactive draggable draggableOptions={draggableOptions}>
+        <img src="https://pbs.twimg.com/profile_images/526421493731717120/INda0NaM.png" height={100} width={100}/>
+    </Interactive>
+  </div>
 )
 
 render(example, document.getElementById('container'));
