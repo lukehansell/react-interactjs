@@ -20,13 +20,8 @@ const draggableOptions = {
 	}
 }
 
-const resizableOptions = {
-	resizestart: event => console.log('here', event)
-}
-
 const example = (
-	<Interactive draggable resizable
-		draggableOptions={draggableOptions}>
+	<Interactive draggable draggableOptions={draggableOptions}>
 		<img src="https://pbs.twimg.com/profile_images/526421493731717120/INda0NaM.png" height={100} width={100}/>
 	</Interactive>
 )
